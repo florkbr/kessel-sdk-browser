@@ -1,0 +1,58 @@
+{
+  "name": "@redhat-cloud-services/frontend-kessel-access-checks",
+  "version": "1.0.0",
+  "description": "A React SDK for performing granular and bulk access checks against the Kessel access check service. This package provides a standardized way to verify user permissions for resources like workspaces, inventory groups, and other entities in your application.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nx build",
+    "test": "nx test",
+    "test:watch": "nx test --watch",
+    "test:coverage": "nx test --coverage",
+    "lint": "nx lint",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "kessel",
+    "access-checks",
+    "permissions",
+    "rbac",
+    "redhat"
+  ],
+  "author": "Red Hat Cloud Services",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@nx/jest": "^22.1.3",
+    "@nx/js": "^22.1.3",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^18.3.27",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "nx": "^22.1.3",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  }
+}
