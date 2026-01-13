@@ -1,0 +1,39 @@
+{
+  "name": "@project-kessel/react-kessel-access-check",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/react-kessel-access-check/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/react-kessel-access-check",
+        "main": "packages/react-kessel-access-check/src/index.ts",
+        "tsConfig": "packages/react-kessel-access-check/tsconfig.lib.json",
+        "assets": []
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/packages/react-kessel-access-check"],
+      "options": {
+        "jestConfig": "packages/react-kessel-access-check/jest.config.js",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "coverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "eslint packages/react-kessel-access-check --ext .ts,.tsx",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

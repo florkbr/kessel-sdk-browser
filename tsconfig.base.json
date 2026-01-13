@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "composite": true,
+    "composite": false,
     "declarationMap": true,
     "importHelpers": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "lib": ["ES2015", "DOM"],
     "module": "commonjs",
     "moduleResolution": "node",
@@ -19,6 +19,12 @@
     "jsx": "react",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@project-kessel/react-kessel-access-check": [
+        "packages/react-kessel-access-check/src/index.ts"
+      ]
+    }
   }
 }
